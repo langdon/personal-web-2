@@ -1,0 +1,7 @@
+FROM fedora-minimal
+RUN microdnf install -y nodejs yarnpkg npm
+RUN mkdir /app
+WORKDIR /app
+
+ENTRYPOINT ["/usr/bin/npm", "run", "develop"]
+RUN microdnf install -y hostname which less net-tools procps-ng

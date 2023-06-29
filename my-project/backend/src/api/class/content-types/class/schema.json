@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "singularName": "class",
+    "pluralName": "classes",
+    "displayName": "Class",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClassName": {
+      "type": "string"
+    },
+    "ClassID": {
+      "type": "uid",
+      "targetField": "ClassName"
+    }
+  }
+}
